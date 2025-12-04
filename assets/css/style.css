@@ -16,13 +16,13 @@
     --borda-card: #f0f0f0;
     --borda-rodape: #ffffff1a;
 
-    /* Indicadores (com transparência convertida para hex) */
+    /* Indicadores */
     --ind-investimento: #ffc107;
-    --ind-inv-bg: #ffc10726; /* rgba(255,193,7,0.15) */
+    --ind-inv-bg: #ffc10726; 
     --ind-despesa: #dc3545;
-    --ind-desp-bg: #dc354526; /* rgba(220,53,69,0.15) */
+    --ind-desp-bg: #dc354526; 
     --ind-renda: #276bff;
-    --ind-renda-bg: #0d6efd26; /* rgba(13,110,253,0.15) */
+    --ind-renda-bg: #0d6efd26; 
 }
 
 /* 2. Configurações Gerais */
