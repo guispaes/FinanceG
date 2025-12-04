@@ -1,0 +1,175 @@
+/* 1. Variáveis de Cores */
+:root {
+    --cor-principal: #276bff;
+    --cor-fundo-hero: #66b2ff;
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+    --cor-rodape: #111111;
+    --cor-fundo-icones: #f8f9fa;
+
+    --texto-branco: #ffffff;
+    --texto-escuro: #333333;
+    --texto-secundario: #ffffffcc;
+    --texto-muted: #6c757d;
+
+    --borda-suave: #dee2e6;
+    --borda-card: #f0f0f0;
+    --borda-rodape: #ffffff1a;
+
+    /* Indicadores (com transparência convertida para hex) */
+    --ind-investimento: #ffc107;
+    --ind-inv-bg: #ffc10726; /* rgba(255,193,7,0.15) */
+    --ind-despesa: #dc3545;
+    --ind-desp-bg: #dc354526; /* rgba(220,53,69,0.15) */
+    --ind-renda: #276bff;
+    --ind-renda-bg: #0d6efd26; /* rgba(13,110,253,0.15) */
+}
+
+/* 2. Configurações Gerais */
+body {
+    background-color: var(--cor-principal);
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+    color: var(--texto-branco);
+}
+
+/* 3. Navbar */
+.navegacao-principal {
+    background-color: var(--cor-principal);
+    border-bottom: 1px solid #ffffff33;
+}
+
+.texto-marca,
+.navegacao-principal .nav-link {
+    color: var(--texto-branco) !important;
+}
+
+.navegacao-principal .nav-link:hover {
+    background-color: var(--cor-branco);
+    color: var(--cor-principal) !important;
+    border-radius: 5px;
+}
+
+/* 4. Seção Hero */
+.secao-inicial {
+    background-image:
+        linear-gradient(#00000099, #00000099),
+        url('/assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--texto-branco);
+    padding-top: 220px;
+    padding-bottom: 100px;
+    min-height: 600px;
+    max-height: 1000px;
+}
+
+.secao-inicial .texto-secundario {
+    color: #ffffffe6 !important;
+}
+
+/* 5. Cards */
+.cartao-customizado,
+.cartao-beneficio,
+.container-resumo,
+.item-resumo {
+    background-color: var(--cor-branco);
+    color: var(--texto-escuro);
+    border: 1px solid var(--borda-card);
+}
+
+.cartao-customizado .texto-secundario,
+.cartao-beneficio .texto-secundario,
+.item-resumo .texto-secundario,
+.grafico {
+    color: var(--texto-muted) !important;
+}
+
+.cartao-customizado {
+    border-radius: 20px;
+    padding: 1.5rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover do Saldo */
+.saldo:hover {
+    background-color: var(--cor-principal);
+    color: var(--texto-branco);
+}
+
+.saldo:hover .texto-secundario {
+    color: #ffffffcc !important;
+}
+
+.container-cards-flutuantes:hover .cartao-customizado:nth-child(1) {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 991px) {
+    .secao-inicial {
+        text-align: center;
+    }
+    .container-cards-flutuantes {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+/* 6. Ícones e Indicadores */
+.cor-inv { color: var(--ind-investimento) !important; }
+.bg-inv { background-color: var(--ind-investimento) !important; }
+.bg-inv-suave { background-color: var(--ind-inv-bg); }
+
+.cor-desp { color: var(--ind-despesa) !important; }
+.bg-desp { background-color: var(--ind-despesa) !important; }
+.bg-desp-suave { background-color: var(--ind-desp-bg); }
+
+.cor-renda { color: var(--ind-renda) !important; }
+.bg-renda { background-color: var(--ind-renda) !important; }
+.bg-renda-suave { background-color: var(--ind-renda-bg); }
+
+.caixa-icone {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-fundo-icones);
+    color: var(--cor-principal);
+}
+
+.circulo-icone {
+    padding: 1rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.fonte-pp {
+    font-size: 0.65rem;
+}
+
+/* 7. Botões e Rodapé */
+.botao-marca-outline {
+    background-color: transparent;
+    color: var(--texto-branco);
+    border: 2px solid var(--cor-branco);
+    transition: all 0.3s ease;
+}
+
+.botao-marca-outline:hover {
+    background-color: var(--cor-branco);
+    color: var(--cor-principal);
+    border-color: var(--cor-branco);
+}
+
+.rodape {
+    background-color: var(--cor-rodape);
+    color: var(--texto-branco);
+    border-top: 1px solid var(--borda-rodape);
+}
+
+.hover-destaque:hover {
+    color: var(--texto-branco) !important;
+    text-decoration: underline !important;
+}

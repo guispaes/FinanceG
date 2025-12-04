@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinanceG - Sua Liberdade Financeira</title>
+
+    <!-- Fonts & Estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top border-bottom navegacao-principal">
+        <div class="container">
+            <a class="navbar-brand fw-bold texto-marca fs-3" href="#">FinanceG</a>
+
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="menuNavegacao">
+                <ul class="navbar-nav align-items-center gap-3 mt-3 mt-lg-0">
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#">Login</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#">Cadastre-se</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Inicial (Hero) -->
+    <section class="secao-inicial">
+        <div class="container">
+            <div class="row align-items-center gy-5">
+
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bolder mb-3">
+                        Atingir uma vida financeira estável nunca foi tão simples.
+                    </h1>
+                    <p class="lead texto-secundario mb-4">
+                        O FinanceG é a evolução da gestão financeira pessoal.  
+                        Diga adeus à complexidade de planilhas e apps antigos.
+                    </p>
+                </div>
+
+                <div class="col-lg-5 offset-lg-1 position-relative">
+                    <div class="container-cards-flutuantes">
+
+                        <div class="cartao-customizado saldo shadow-sm mb-3">
+                            <span class="texto-secundario small fw-bold text-uppercase ls-1">Saldo total</span>
+                            <h2 class="saldo fw-bold mt-1 mb-0">R$ 9.200,00</h2>
+                        </div>
+
+                        <div class="cartao-customizado shadow-sm mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="texto-secundario small fw-bold text-uppercase">Resumo do Mês</span>
+                                <div class="d-flex gap-2 small">
+                                    <span><i class="fas fa-circle cor-inv fonte-pp"></i> Inv.</span>
+                                    <span><i class="fas fa-circle cor-desp fonte-pp"></i> Desp.</span>
+                                    <span><i class="fas fa-circle cor-renda fonte-pp"></i> Renda</span>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-end justify-content-between gap-2" style="height: 100px;">
+                                <div class="barra bg-inv rounded-top" style="height: 45%; width: 25%;"></div>
+                                <div class="barra bg-desp rounded-top" style="height: 70%; width: 25%;"></div>
+                                <div class="barra bg-renda rounded-top" style="height: 55%; width: 25%;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios -->
+    <section class="py-5 secao-beneficios">
+        <div class="container py-4">
+            <div class="row g-5">
+
+                <div class="col-lg-4">
+                    <h3 class="fw-bold mb-3">Por que FinanceG?</h3>
+                    <p class="texto-secundario">Nosso produto integra todo o planejamento financeiro com clareza absoluta.</p>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+                            <div class="cartao-beneficio p-4 rounded-4 shadow-sm h-100">
+                                <div class="caixa-icone rounded-circle mb-3 d-inline-flex p-3">
+                                    <i class="fas fa-ban fs-4"></i>
+                                </div>
+                                <h5 class="fw-bold">Sem Poluição Visual</h5>
+                                <p class="texto-secundario small mb-0">Foco no essencial, sem telas confusas ou anúncios.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="cartao-beneficio p-4 rounded-4 shadow-sm h-100">
+                                <div class="caixa-icone rounded-circle mb-3 d-inline-flex p-3">
+                                    <i class="fas fa-bullseye fs-4"></i>
+                                </div>
+                                <h5 class="fw-bold">Metas Claras</h5>
+                                <p class="texto-secundario small mb-0">Visualização intuitiva de metas de curto e longo prazo.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section class="py-5 secao-dashboard">
+        <div class="container py-4">
+            <div class="row align-items-center gy-5">
+
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="container-resumo p-4 rounded-4 shadow-sm">
+
+                        <div class="item-resumo d-flex align-items-center p-3 rounded-3 mb-3 shadow-sm">
+                            <div class="circulo-icone bg-inv-suave cor-inv">
+                                <i class="fas fa-chart-pie fs-5"></i>
+                            </div>
+                            <div>
+                                <span class="texto-secundario small d-block">Investimentos</span>
+                                <h5 class="fw-bold m-0">R$ 5.000,00</h5>
+                            </div>
+                        </div>
+
+                        <div class="item-resumo d-flex align-items-center p-3 rounded-3 mb-3 shadow-sm">
+                            <div class="circulo-icone bg-desp-suave cor-desp">
+                                <i class="fas fa-arrow-down fs-5"></i>
+                            </div>
+                            <div>
+                                <span class="texto-secundario small d-block">Despesas</span>
+                                <h5 class="fw-bold m-0">R$ 1.700,00</h5>
+                            </div>
+                        </div>
+
+                        <div class="item-resumo d-flex align-items-center p-3 rounded-3 shadow-sm">
+                            <div class="circulo-icone bg-renda-suave cor-renda">
+                                <i class="fas fa-arrow-up fs-5"></i>
+                            </div>
+                            <div>
+                                <span class="texto-secundario small d-block">Rendas</span>
+                                <h5 class="fw-bold m-0">R$ 2.500,00</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 order-1 order-lg-2 ps-lg-5">
+                    <h2 class="fw-bold mb-3 display-6">Entenda seu dinheiro em segundos.</h2>
+                    <p class="lead texto-secundario mb-4">
+                        Interface simples e intuitiva, com gráficos inteligentes para decisões melhores.
+                    </p>
+                    <a href="#" class="btn rounded-pill px-4 fw-bold botao-marca-outline">
+                        Conheça o app <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="rodape pt-5 pb-4 mt-5">
+        <div class="container">
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3"><i class="fas fa-wallet me-2"></i>FinanceG</h5>
+                    <p class="texto-secundario small">Simplificando sua jornada financeira para você focar no que importa.</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Navegação</h6>
+                    <ul class="list-unstyled texto-secundario small d-flex flex-column gap-2">
+                        <li><a href="#" class="text-reset text-decoration-none hover-destaque">Login</a></li>
+                        <li><a href="#" class="text-reset text-decoration-none hover-destaque">Cadastre-se</a></li>
+                        <li><a href="#" class="text-reset text-decoration-none hover-destaque">Sobre nós</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Projeto Acadêmico</h6>
+                    <div class="texto-secundario small">
+                        <p class="mb-1">Dev: Guilherme Santana Paes</p>
+                        <p class="mb-1">RM: 566741</p>
+                        <p class="mb-0">Turma: 1TDSOS-2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="text-center texto-secundario small">
+                &copy; 2025 FinanceG. Todos os direitos reservados.
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
